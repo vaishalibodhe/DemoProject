@@ -23,11 +23,6 @@ public class InvoiceController {
     @PostMapping
     public ResponseEntity<InvoiceResponse> createInvoice(@Valid @RequestBody InvoiceRequest invoiceRequest)
     {
-        System.out.println("hello");
-        System.out.println(invoiceRequest.toString());
-
-
-
         InvoiceResponse invoiceResponse = invoiceService.createInvoice(invoiceRequest);
         return ResponseEntity.ok(invoiceResponse);
     }
