@@ -33,9 +33,4 @@ public class InvoiceDetails {
     String supplierOrderNo;
     String otherRef;
 
-
-
-
-
-
 }
